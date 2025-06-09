@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../apps/apps_list.dart';
 import 'app_item.dart';
+import 'package:flutter/services.dart'; // Add this import
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -10,6 +11,17 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Engineering Toolkit'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.close),
+            onPressed: () {
+              // Exit the app
+              SystemNavigator.pop();
+              // Alternative for Android:
+              // SystemChannels.platform.invokeMethod('SystemNavigator.pop');
+            },
+          ),
+        ],
         centerTitle: true,
       ),
       body: GridView.builder(
