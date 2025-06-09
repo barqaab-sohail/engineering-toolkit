@@ -7,7 +7,7 @@ class SolarCalculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Solar System Calculator')),
+      // appBar: AppBar(title: const Text('Solar System Calculator')),
       body: const SolarHome(),
     );
   }

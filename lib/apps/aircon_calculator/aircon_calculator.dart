@@ -7,7 +7,7 @@ class AirConCalculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Air Condition System Calculator')),
+      // appBar: AppBar(title: const Text('Air Condition System Calculator')),
       body: const AirconHome(),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'app_model.dart';
 import 'solar_calculator/solar_calculator.dart';
+import 'power_converter/power_converter.dart';
 import 'aircon_calculator/aircon_calculator.dart';
 
 List<AppModel> appsList = [
@@ -19,6 +20,14 @@ List<AppModel> appsList = [
     icon: Icons.ac_unit,
     screen: const AirConCalculator(),
     color: Colors.blue,
+  ),
+  AppModel(
+    id: 'power_converter',
+    title: 'Power Converter',
+    description: 'kW ↔ Ampere and other conversions',
+    icon: Icons.bolt,
+    screen: const PowerConverter(),
+    color: Colors.amber,
   ),
   // Add more apps here following the same pattern
 ];
